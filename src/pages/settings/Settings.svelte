@@ -272,15 +272,15 @@ Cadbos company. See LICENSE for complete terms.
 		align-items: center;
 		gap: 10px;
 		padding: 8px 10px;
-		border: 1px solid var(--color-border);
 		border-radius: var(--radius);
-		color: var(--color-muted);
+		background: rgb(47 111 79 / 0.1);
+		color: var(--color-accent-text);
 	}
 
 	.site {
 		flex: 1;
 		min-width: 0;
-		color: var(--color-text);
+		font-weight: 600;
 		word-break: break-all;
 	}
 
