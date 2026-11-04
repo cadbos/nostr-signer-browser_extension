@@ -22,8 +22,10 @@ AI design login events, and turns every other request away.
 
 On AI design origins the extension injects a provider before the page's own scripts run. It
 exposes the standard [NIP-07](https://github.com/nostr-protocol/nips/blob/master/07.md)
-`window.nostr`, and the same signer under its own name with the calls that hand account
-setup over between the app and the extension:
+`window.nostr` unless another extension already provides it, and always exposes the same
+signer as `window.aiDesignSigner` with the calls that hand account setup over between the app
+and the extension. Use `window.aiDesignSigner` to reach AI Design Signer when another NIP-07
+extension owns `window.nostr`:
 
 ```ts
 window.aiDesignSigner.status(): Promise<{ hasAccount: boolean; locked: boolean }>;
@@ -34,7 +36,9 @@ window.aiDesignSigner.importKey(secretKeyHex): Promise<string>; // saves an app-
 ```
 
 Failed calls reject with an error whose `code` is one of `no_account`, `account_exists`,
-`locked`, `rejected`, `forbidden_origin`, `invalid_event`, `invalid_key`, `busy`, `internal`.
+`locked`, `rejected`, `forbidden_origin`, `invalid_event`, `invalid_key`, `busy`,
+`disconnected` (the page was left open across an extension reload or update and must be
+refreshed), `internal`.
 When a key is added or removed, the extension dispatches `ai-design-signer:accountchange` on
 `window`, so the app can sign in as soon as setup finishes in another tab.
 
