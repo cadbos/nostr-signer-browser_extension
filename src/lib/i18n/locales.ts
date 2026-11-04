@@ -10,17 +10,18 @@
 
 export const ru = {
 	'brand.name': 'AI Design Signer',
-	'brand.tagline': 'Вход в ИИ дизайн',
-	'locale.switch': 'English',
+	'brand.tagline': 'Расширение для авторизации',
+	'locale.switch': 'RU',
 	'common.back': 'Назад',
 	'common.next': 'Далее',
 	'common.close': 'Закрыть',
 
 	'welcome.title': 'Добро пожаловать',
-	'welcome.description': 'Расширение хранит ваш секретный ключ и подписывает вход в ИИ дизайн.',
-	'welcome.create': 'Создать аккаунт в ИИ дизайн',
+	'welcome.description':
+		'Расширение хранит Ваш секретный ключ и подписывает вход и другие возможные действия в приложении.',
+	'welcome.create': 'Создать аккаунт в приложении',
 	'welcome.createHint': 'Ключ создаётся на сайте, затем его можно добавить сюда',
-	'welcome.import': 'Добавить ключ',
+	'welcome.import': 'Добавить ключ в расширение браузера',
 	'welcome.importHint': 'Введите секретный ключ nsec или загрузите файл',
 
 	'auth.setup.progress': 'Шаг {current} из {total}',
@@ -82,7 +83,8 @@ export const ru = {
 	'settings.account': 'Аккаунт',
 	'settings.password': 'Пароль',
 	'settings.passwordOn': 'Секретный ключ зашифрован паролем.',
-	'settings.passwordOff': 'Пароль не установлен: ключ хранится в браузере без шифрования.',
+	'settings.passwordOff':
+		'Пароль не установлен: ключ хранится в расширении браузера без шифрования.',
 	'settings.setPassword': 'Установить пароль',
 	'settings.changePassword': 'Сменить пароль',
 	'settings.removePassword': 'Убрать пароль',
@@ -114,17 +116,18 @@ export type Dictionary = Record<keyof typeof ru, string>;
 
 export const en: Dictionary = {
 	'brand.name': 'AI Design Signer',
-	'brand.tagline': 'Sign in to AI design',
-	'locale.switch': 'Русский',
+	'brand.tagline': 'Sign-in extension',
+	'locale.switch': 'EN',
 	'common.back': 'Back',
 	'common.next': 'Next',
 	'common.close': 'Close',
 
 	'welcome.title': 'Welcome',
-	'welcome.description': 'The extension keeps your secret key and signs your sign-in to AI design.',
-	'welcome.create': 'Create an account in AI design',
+	'welcome.description':
+		'The extension keeps your secret key and signs sign-in and other possible actions in the app.',
+	'welcome.create': 'Create an account in the app',
 	'welcome.createHint': 'The key is created on the site, then you can add it here',
-	'welcome.import': 'Add a key',
+	'welcome.import': 'Add a key to the browser extension',
 	'welcome.importHint': 'Enter an nsec secret key or upload the key file',
 
 	'auth.setup.progress': 'Step {current} of {total}',
@@ -188,7 +191,7 @@ export const en: Dictionary = {
 	'settings.account': 'Account',
 	'settings.password': 'Password',
 	'settings.passwordOn': 'The secret key is encrypted with a password.',
-	'settings.passwordOff': 'No password: the key is stored in the browser unencrypted.',
+	'settings.passwordOff': 'No password: the key is stored in the browser extension unencrypted.',
 	'settings.setPassword': 'Set password',
 	'settings.changePassword': 'Change password',
 	'settings.removePassword': 'Remove password',
