@@ -20,7 +20,7 @@ export const ru = {
 	'welcome.description':
 		'Расширение хранит Ваш секретный ключ и подписывает вход и другие возможные действия в приложении.',
 	'welcome.create': 'Создать аккаунт в приложении',
-	'welcome.createHint': 'Ключ создаётся на сайте, затем его можно добавить сюда',
+	'welcome.createHint': 'Ключ создаётся в приложении, затем его можно добавить сюда',
 	'welcome.import': 'Добавить ключ в расширение браузера',
 	'welcome.importHint': 'Введите секретный ключ nsec или загрузите файл',
 
@@ -34,10 +34,10 @@ export const ru = {
 	'auth.setup.downloadHint': 'Будет скачан файл с парой ключей: публичным и секретным',
 	'auth.setup.ackSecretSaved': 'Я сохранил секретный ключ вне этого браузера',
 	'done.signIn': 'Вернуться в приложение',
-	'auth.setup.fileName': 'ИИ дизайн-ключ-аккаунта.txt',
-	'auth.setup.fileTitle': 'Ключ аккаунта ИИ дизайн',
+	'auth.setup.fileName': 'ключи-аккаунта.txt',
+	'auth.setup.fileTitle': 'Ключи аккаунта',
 	'auth.setup.fileWarning':
-		'Секретный ключ — единственный способ войти в этот аккаунт. ИИ дизайн не может его восстановить.',
+		'Секретный ключ — единственный способ войти в этот аккаунт. Приложение не может его восстановить.',
 
 	'import.title': 'Добавление ключа',
 	'import.description': 'Введите секретный ключ nsec или загрузите файл.',
@@ -65,8 +65,8 @@ export const ru = {
 
 	'done.title': 'Аккаунт готов',
 	'done.description':
-		'Секретный ключ сохранён в расширении. Вход в ИИ дизайн теперь занимает один клик.',
-	'done.openApp': 'Откройте ИИ дизайн и выберите вход через расширение.',
+		'Секретный ключ сохранён в расширении. Вход в приложение теперь занимает один клик.',
+	'done.openApp': 'Откройте приложение и выберите вход через расширение.',
 
 	'unlock.label': 'Введите пароль, чтобы разблокировать ключ',
 	'unlock.submit': 'Разблокировать',
@@ -90,7 +90,7 @@ export const ru = {
 	'settings.removePassword': 'Убрать пароль',
 	'settings.saved': 'Сохранено',
 	'settings.sites': 'Разрешения',
-	'settings.sitesEmpty': 'Сайты, которым вы подтвердили вход, появятся здесь.',
+	'settings.sitesEmpty': 'Приложения, которым вы подтвердили вход, появятся здесь.',
 	'settings.revoke': 'Отозвать разрешение',
 	'settings.remove': 'Удалить ключ из расширения',
 	'settings.removeWarning':
@@ -98,10 +98,10 @@ export const ru = {
 	'settings.removeConfirm': 'Удалить ключ',
 	'settings.locked': 'Разблокируйте ключ, чтобы изменить настройки.',
 
-	'prompt.connectTitle': 'Подтверждение входа в ИИ дизайн',
-	'prompt.connectText': 'Сайт просит ваш публичный ключ и подпись для входа:',
+	'prompt.connectTitle': 'Подтверждение входа в приложение',
+	'prompt.connectText': 'Приложение просит ваш публичный ключ и подпись для входа:',
 	'prompt.connectSafe':
-		'Секретный ключ не передаётся сайту. Разрешение запомнится для этого адреса.',
+		'Секретный ключ не передаётся приложению. Разрешение запомнится для этого адреса.',
 	'prompt.unlockTitle': 'Разблокировка ключа',
 	'prompt.unlockText': 'Введите пароль, чтобы подписать вход:',
 	'prompt.approve': 'Подтвердить',
@@ -126,7 +126,7 @@ export const en: Dictionary = {
 	'welcome.description':
 		'The extension keeps your secret key and signs sign-in and other possible actions in the app.',
 	'welcome.create': 'Create an account in the app',
-	'welcome.createHint': 'The key is created on the site, then you can add it here',
+	'welcome.createHint': 'The key is created in the app, then you can add it here',
 	'welcome.import': 'Add a key to the browser extension',
 	'welcome.importHint': 'Enter an nsec secret key or upload the key file',
 
@@ -141,10 +141,10 @@ export const en: Dictionary = {
 	'auth.setup.downloadHint': 'Downloads a file with the key pair: the public and the secret key',
 	'auth.setup.ackSecretSaved': 'I saved the secret key outside this browser',
 	'done.signIn': 'Back to the app',
-	'auth.setup.fileName': 'AI design-account-key.txt',
-	'auth.setup.fileTitle': 'AI design account key',
+	'auth.setup.fileName': 'account-keys.txt',
+	'auth.setup.fileTitle': 'Account keys',
 	'auth.setup.fileWarning':
-		'The secret key is the only way into this account. AI design cannot restore it.',
+		'The secret key is the only way into this account. The app cannot restore it.',
 
 	'import.title': 'Add a key',
 	'import.description': 'Enter your nsec secret key or upload the key file.',
@@ -173,8 +173,8 @@ export const en: Dictionary = {
 
 	'done.title': 'Your account is ready',
 	'done.description':
-		'The secret key is saved in the extension. Signing in to AI design now takes one click.',
-	'done.openApp': 'Open AI design and choose to sign in with the extension.',
+		'The secret key is saved in the extension. Signing in to the app now takes one click.',
+	'done.openApp': 'Open the app and choose to sign in with the extension.',
 
 	'unlock.label': 'Enter your password to unlock the key',
 	'unlock.submit': 'Unlock',
@@ -197,17 +197,17 @@ export const en: Dictionary = {
 	'settings.removePassword': 'Remove password',
 	'settings.saved': 'Saved',
 	'settings.sites': 'Permissions',
-	'settings.sitesEmpty': 'Sites you approve for sign-in appear here.',
+	'settings.sitesEmpty': 'Applications you approve for sign-in appear here.',
 	'settings.revoke': 'Revoke permission',
 	'settings.remove': 'Remove the key from the extension',
 	'settings.removeWarning': 'Without a saved secret key this account cannot be recovered.',
 	'settings.removeConfirm': 'Remove key',
 	'settings.locked': 'Unlock the key to change settings.',
 
-	'prompt.connectTitle': 'Approve sign-in to AI design',
-	'prompt.connectText': 'This site asks for your public key and a sign-in signature:',
+	'prompt.connectTitle': 'Approve sign-in to the app',
+	'prompt.connectText': 'This app asks for your public key and a sign-in signature:',
 	'prompt.connectSafe':
-		'The secret key is never shared with the site. The permission is remembered for this address.',
+		'The secret key is never shared with the app. The permission is remembered for this address.',
 	'prompt.unlockTitle': 'Unlock your key',
 	'prompt.unlockText': 'Enter your password to sign in:',
 	'prompt.approve': 'Approve',
